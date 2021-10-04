@@ -1,6 +1,3 @@
-# urlWater = '/Users/jeroenverharen/Box Sync/PD/Papers/Sucrose Preference/SweetiePy/data/water.xlsx'
-# urlSucrose = '/Users/jeroenverharen/Box Sync/PD/Papers/Sucrose Preference/SweetiePy/data/sucrose.xlsx'
-
 
 import pandas as pd
 import numpy as np
@@ -271,7 +268,7 @@ def FitModel(matChoices: np.array, priors: bool = True) -> 'prints best-fit para
                     rpe = rho - valS  # compute reward prediction error
                     valS = valS + alpha*math.tanh(matChoices[i,2]/10)*rpe  # compute new value
                     
-                    logP = logP + math.log(Psuc ) # add to log likelihood
+                    logP = logP + math.log(Psuc) # add to log likelihood
                     
                     ct_unchosen_water = ct_unchosen_water + 1
                     ct_unchosen_sucrose = 0
@@ -312,41 +309,12 @@ def FitModel(matChoices: np.array, priors: bool = True) -> 'prints best-fit para
     # return absolute minimum
     minVal = matMin[np.argmin(matMin[:,0]),:]
     
-    print("Model fitting successful.\n\nRHO (hedonia): "+str(minVal[1])+ "\nALPHA (learning rate): "+str(minVal[2])+"\nETA (discount/attraction): "+str(minVal[3])+"\n\nLog likelihood of fit: "+str(-1*minVal[0]))
+    print("Model fitting successful.\n\nRHO (hedonia): "+
+          str(minVal[1])+ 
+          "\nALPHA (learning rate): "+
+          str(minVal[2])+
+          "\nETA (discount/attraction): "+
+          str(minVal[3])+
+          "\n\nLog likelihood of fit: "+
+          str(-1*minVal[0]))
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#run scripts
-
-# [vecWater, vecSucrose] = LoadData(water = urlWater, sucrose = urlSucrose)
-
-# matChoices = PreProcess(vecWater, vecSucrose, time_cutoff = 5)
-
-# CreateFigure(vecWater, vecSucrose, matChoices)
-
-# FitModel(matChoices, priors = True)
