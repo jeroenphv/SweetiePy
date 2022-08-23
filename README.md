@@ -32,7 +32,7 @@ The winning model was further described by a choice size-dependent choice rule, 
 
 
 
-For each session, best-fit parameters {ρ, α, η} were estimated using maximum likelihood estimation (Figure 2C; Movie 1), allowing for a point-estimate comparison of each of the parameters between different mice and SPT sessions. _See how this works in this video:_
+For each session, best-fit parameters {ρ, α, η} were estimated using maximum likelihood estimation, allowing for a point-estimate comparison of each of the parameters between different mice and SPT sessions. See how this works in this video:
 
 https://user-images.githubusercontent.com/31282220/186237978-95647e80-19ae-420c-90cd-f8bbc32d82dc.mp4
 
