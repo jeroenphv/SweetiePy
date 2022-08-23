@@ -1,5 +1,6 @@
+![](misc/Logo.png)
+
 # SweetiePy
-Toolbox to analyze sucrose preference test data.
 
 Written by Dr. Jeroen P.H. Verharen, UC Berkeley.
 
