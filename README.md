@@ -10,7 +10,7 @@ For questions: jeroenverharen@gmail.com
 
 ## Sucrose preference test :mouse:
 
-The sucrose preference test is one of the **most widely used behavioral paradigms in neuroscience**, measuring the relative preference of a 1-2% sucrose solution over water as a proxy for reward sensitivity in rodents. As such, a reduction in sucrose preference is interpreted as anhedonia, and used as evidence that animals exhibit ‘depression-like behavior’, for example after stress.
+The sucrose preference test is one of the most widely used behavioral paradigms in neuroscience, measuring the relative preference of a 1-2% sucrose solution over water as a proxy for reward sensitivity in rodents. As such, a reduction in sucrose preference is interpreted as anhedonia, and used as evidence that animals exhibit ‘depression-like behavior’, for example after stress.
 
 However, the sucrose preference test is a surprisingly complex behavioral test that involves several other cognitive processes, including learning and memory. As a result, a mere reduction in sucrose preference can also be indicative of other cognitive impairments, such as an inability of animals to learn from or memorize reward, and thus not necessarily reflect anhedonia.
 
