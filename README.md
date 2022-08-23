@@ -17,7 +17,7 @@ However, the sucrose preference test is a surprisingly complex behavioral test t
 
 ## Model fitting procedure
 
-In an attempt to parse the different component processes subserving sucrose preference, we used a model fitting procedure in which we fit 14 different reinforcement learning models to the trial-by-trial choice behavior of the mice. These 14 models differed in the way animals attributed value to the water and sucrose bottles in the task (learning), how those values guided choices, and how the value of the unchosen bottle changed over time. 
+In an attempt to parse the different component processes subserving sucrose preference, we used a model fitting procedure in which we fit 14 different reinforcement learning models to the trial-by-trial choice behavior of mice in the sucrose preference test. These 14 models differed in the way animals attributed value to the water and sucrose bottles in the task (learning), how those values guided choices, and how the value of the unchosen bottle changed over time. 
 
 ![Model selection](https://user-images.githubusercontent.com/31282220/186240602-95b7435d-6133-4c05-8c4f-2a719bb1abb8.png)
 
