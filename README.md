@@ -40,4 +40,4 @@ https://user-images.githubusercontent.com/31282220/186237978-95647e80-19ae-420c-
 
 ## The SweetiePy toolbox
 
-The SweetiePy toolbox consists of a Jupyter notebook (<code>Main.ipynb</code>) that guides you through the model fitting procedure in a step-by-step manner. The scripts fit model #4 (the winning model in the image above) to your sucrose preference test data. The only data you need to feed the algorithm is the individual timestamps of the licks in the task (in seconds). It will output the values of the parameters in the model (ρ, α and η; see above) that best describe your data.
+The SweetiePy toolbox consists of a Jupyter notebook (<code>Main.ipynb</code>) that guides you through the model fitting procedure in a step-by-step manner. The scripts fit model #4 (the winning model in the image above) to your sucrose preference test data. The only data you need to feed the algorithm is the individual timestamps of the licks in the task (in seconds). It will output the values of the parameters in the model (ρ, α and η; see above) that best describe your data (as well as the log likelihood of the fit).
