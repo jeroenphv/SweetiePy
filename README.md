@@ -2,7 +2,7 @@
 
 # SweetiePy
 
-Written by Dr. Jeroen P.H. Verharen, UC Berkeley. The paper accompanying this toolbox is currently undergoing peer review (for preprint click [https://www.biorxiv.org/content/10.1101/2022.11.30.518425v1](here)).
+Written by Dr. Jeroen P.H. Verharen, UC Berkeley. The paper accompanying this toolbox is currently undergoing peer review (for preprint click [here](https://www.biorxiv.org/content/10.1101/2022.11.30.518425v1)).
 
 For questions: jeroenverharen@gmail.com
 
