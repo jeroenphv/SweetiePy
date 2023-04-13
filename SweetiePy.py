@@ -4,6 +4,7 @@ import numpy as np
 import scipy.optimize as spo
 import scipy.stats as sp
 import math
+import warnings
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 from matplotlib.colors import LinearSegmentedColormap
@@ -173,7 +174,7 @@ def CreateFigure(vecWater, vecSucrose, matChoices):
     ax1.set_ylim([-0.02, 0.14])    
     ax1.set_xlim([0, matChoices[-1,1]])
     ax1.set_xticks(np.arange(0,matChoices[-1,1],3600))
-    ax1.set_xticklabels(np.arange(0, round(matChoices[-1,1]/3600)+1, 1))
+    ax1.set_xticklabels(np.arange(0, matChoices[-1,1]/3600, 1))
     ax1.set_xlabel('Time (h)')
     
     
@@ -196,7 +197,7 @@ def CreateFigure(vecWater, vecSucrose, matChoices):
     ax2b.set_ylim([0, 100])
     ax2b.set_xlim([0, matChoices[-1,1]/100])
     ax2b.set_xticks(np.arange(0,matChoices[-1,1]/100,36))
-    ax2b.set_xticklabels(np.arange(0, round(matChoices[-1,1]/3600)+1, 1))
+    ax2b.set_xticklabels(np.arange(0, matChoices[-1,1]/3600, 1))
 
     
     # In ax3, show choices over time with choice size
@@ -293,6 +294,7 @@ def FitModel(matChoices: np.array, priors: bool = True) -> 'prints best-fit para
             return np.Inf
         
     print("Starting model fitting procedure...\n")
+    warnings.filterwarnings("ignore") # suppress warnings from scipy.optimize
     
     # perform model fiting, use different starting points to prevent getting stuck in local minimum
     matMin = np.empty((0,4))
