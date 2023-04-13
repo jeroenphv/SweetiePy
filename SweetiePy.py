@@ -205,8 +205,9 @@ def CreateFigure(vecWater, vecSucrose, matChoices):
     ax3.bar(np.where(matChoices[:,3]==1)[0], matChoices[np.where(matChoices[:,3]==1)[0],2], color=(255/255,127/255,14/255))
     ax3.set_xlabel('Choice #')
     ax3.set_ylabel('Licks')
+    plt.show()
     
-
+    print("Please note that Jupyter Notebook doesn't always display the individual licks and choices properly in the top panel.")
 
 
 
