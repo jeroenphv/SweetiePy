@@ -174,7 +174,7 @@ def CreateFigure(vecWater, vecSucrose, matChoices):
     ax1.set_ylim([-0.02, 0.14])    
     ax1.set_xlim([0, matChoices[-1,1]])
     ax1.set_xticks(np.arange(0,matChoices[-1,1],3600))
-    ax1.set_xticklabels(np.arange(0, matChoices[-1,1]/3600, 1))
+    ax1.set_xticklabels(np.round(np.arange(0,matChoices[-1,1],3600)/3600))
     ax1.set_xlabel('Time (h)')
     
     
@@ -197,7 +197,7 @@ def CreateFigure(vecWater, vecSucrose, matChoices):
     ax2b.set_ylim([0, 100])
     ax2b.set_xlim([0, matChoices[-1,1]/100])
     ax2b.set_xticks(np.arange(0,matChoices[-1,1]/100,36))
-    ax2b.set_xticklabels(np.arange(0, matChoices[-1,1]/3600, 1))
+    ax2b.set_xticklabels(np.round(np.arange(0,matChoices[-1,1]/100,36)/36))
 
     
     # In ax3, show choices over time with choice size
