@@ -181,9 +181,9 @@ def CreateFigure(vecWater, vecSucrose, matChoices):
     # In ax1, draw rectangles for choices
     for i in range(0, len(matChoices)):
         if matChoices[i,3] == 0:
-            rect = patches.Rectangle((matChoices[i,0], 0.01), width = matChoices[i,1]-matChoices[i,0], height = 0.01, edgecolor='none', facecolor=(31/255,119/255,180/255))
+            rect = patches.Rectangle((matChoices[i,0], 0.01), width = matChoices[i,1]-matChoices[i,0], height = 0.01, edgecolor=(31/255,119/255,180/255), facecolor=(31/255,119/255,180/255), antialiased=True)
         elif matChoices[i,3] == 1:
-            rect = patches.Rectangle((matChoices[i,0], 0.11), width = matChoices[i,1]-matChoices[i,0], height = 0.01, edgecolor='none', facecolor=(255/255,127/255,14/255))
+            rect = patches.Rectangle((matChoices[i,0], 0.11), width = matChoices[i,1]-matChoices[i,0], height = 0.01, edgecolor=(255/255,127/255,14/255), facecolor=(255/255,127/255,14/255), antialiased=True)
         ax1.add_patch(rect)
 
 
@@ -207,7 +207,7 @@ def CreateFigure(vecWater, vecSucrose, matChoices):
     ax3.set_ylabel('Licks')
     plt.show()
     
-    print("Please note that Jupyter Notebook doesn't always display the individual licks and choices properly in the top panel.")
+    print("In the top panel, choices are displayed as rectangles and individual licks are displayed as vertical lines. Please note that Jupyter Notebook doesn't always display these individual choices and licks properly when using long time scales. Zoom in for details, for example by changing ax1.set_xlim()")
 
 
 
