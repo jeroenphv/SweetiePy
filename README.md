@@ -2,7 +2,7 @@
 
 # SweetiePy
 
-Written by Dr. Jeroen P.H. Verharen, UC Berkeley. The paper accompanying this toolbox can be found [here](https://www.biorxiv.org/content/10.1101/2022.11.30.518425v1](https://www.nature.com/articles/s41467-023-38028-0).
+Written by Dr. Jeroen P.H. Verharen, UC Berkeley. The paper accompanying this toolbox can be found [here](https://www.nature.com/articles/s41467-023-38028-0).
 
 For questions: jeroenverharen@gmail.com
 
